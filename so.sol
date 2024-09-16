@@ -44,6 +44,6 @@ contract MetaTransaction is EIP712 {
     ) public {
         require(_verify(from, nonce, signature), "Invalid signature");
         _nonces[from]++;
-        // Execute the function
+        
     }
 }
